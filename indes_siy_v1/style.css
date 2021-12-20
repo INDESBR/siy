@@ -1,0 +1,518 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+header, main, section, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+:root {
+    --azul: #4284f4;
+    --vermelho: #db4438;
+    --verde: #0f9e59;
+    --amarelo: #f5b500;
+    --branco: #ffffff;
+    --preto: #181818;
+    --cinza: #c4c4c4;
+}
+
+a {
+    color: var(--preto);
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--azul);
+    
+}
+
+.container {
+    width: 1000px;
+    padding: 20px 0;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-e {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.subscribe {
+    background-color: var(--azul);
+    padding: 10px 20px;
+    border-radius: 100px;
+    color: var(--branco);
+    font-weight: bold;
+    margin: 0 20px;
+}
+
+.subscribe:hover {
+    background-color: #3162b6;
+    color: var(--branco);
+}
+
+.subscribe:active {
+    background-color: #234786;
+}
+
+.space {
+    height: 30px;
+}
+
+h2 {
+    position: relative;
+    display: inline;
+}
+
+.underscore::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: red;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 100px;
+}
+
+.und-red::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--vermelho);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 100px;
+
+}
+
+.und-blue::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--azul);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 100px;
+
+}
+
+.und-green::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background-color: var(--verde);
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    border-radius: 100px;
+
+}
+
+
+
+
+
+.whats {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 30px;
+    z-index: 20;
+}
+
+.icon {
+    width: 80px;
+    height: 80px;
+    transition: 0.3s;
+}
+
+.icon:hover {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+}
+
+.icon img {
+    width: 100%;
+}
+
+/* -------------- HEADER -------------- */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: var(--branco);
+    z-index: 2;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.26);
+}
+
+.logo img{
+    width: 200px;
+}
+
+
+
+/* -------------- HEADER -------------- */
+
+
+
+
+
+
+/* -------------- SLIDER -------------- */
+
+main {
+    padding-top: 90px;
+}
+
+ul li {
+    margin-left: 20px;
+}
+
+.bg {
+    background-image: url(./img/hero.png);
+    padding: 120px 0;
+    text-align: center;
+    color: var(--branco);
+    background-position:top;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.title {
+    font-size: 3em;
+    line-height: 5px;
+}
+
+
+
+/* -------------- SLIDER -------------- */
+
+
+
+/* -------------- CALL TO ACTION -------------- */
+
+.cta img {
+    width: 15%;
+    margin: 0 30px;
+}
+
+/* -------------- CALL TO ACTION -------------- */
+
+
+
+
+/* -------------- BOOK -------------- */
+
+
+#book {
+    margin: 0 60px;
+}
+
+#head {
+    width: 20%;
+    margin: 0 60px;
+}
+
+/* -------------- BOOK -------------- */
+
+
+/* -------------- DEPOIMENTOS -------------- */
+
+.photo {
+    width: 150px;
+    clip-path: circle();
+    margin-right: 40px;
+}
+
+.beneficios {
+    margin: 20px 0;
+}
+
+
+
+/* -------------- DEPOIMENTOS -------------- */
+
+
+/* -------------- DEPOIMENTOS SLIDER -------------- */
+
+#dep-container {
+    display: flex;
+    justify-content: center;
+}
+
+.dep {
+    width: 80%;
+}
+
+.dep-slide{
+    padding: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dep-slide img{
+    margin-right: 40px;
+    width: 100px;
+    clip-path: circle();
+}
+
+.video {
+    width: 100%;
+    height: 550px;
+}
+
+
+/* -------------- DEPOIMENTOS SLIDER -------------- */
+
+/* CLIENTES */
+
+
+.dep-partner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.dep-item img {
+    max-height: 100px;
+}
+
+/* CLIENTES */
+
+
+
+/* -------------- TEACHER -------------- */
+
+.teacher {
+    width: 450px;
+}
+
+.teacher img {
+    width: 250px;
+}
+
+.logo_teacher {
+    display: flex;
+    justify-content: center;
+}
+
+/* -------------- TEACHER -------------- */
+
+
+/* -------------- INDES -------------- */
+
+.indes img{
+    width: 250px;
+    clip-path: circle();
+}
+
+/* -------------- INDES -------------- */
+
+
+
+/* -------------- FOOTER -------------- */
+
+footer {
+    background-color: var(--preto);
+    color: var(--branco);
+}
+
+.footer_p {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.logo-w {
+    background-image: url(./logo/logo_white.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 250px;
+    height: 100px;
+}
+
+/* -------------- FOOTER -------------- */
+
+
+
+
+
+
+
+@media screen and (max-width: 1024px) {
+    
+    html {
+        text-align: center;
+        width: 100%;
+    }
+
+    main {
+        padding-top: 30px;
+    }
+
+    .whats {
+        left: 0;
+        width: 50px;
+        height: 50px;
+        margin: 15px;
+    }
+
+    .title {
+        line-height: inherit;
+        font-size: 2em;
+    }
+
+    .icon {
+        width: 100%;
+    }
+
+    .icon img {
+        width: 100%;
+    }
+
+    .photo {
+        margin: 0;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+    .logo img {
+        width: 120px;
+    }
+
+    .subscribe {
+        font-size: 0.6em;
+    }
+
+    .sub2 {
+        font-size: 1em;
+        padding: 10px 30px;
+    }
+
+    .off{
+        display: none;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .bg h1 {
+        font-size: 2em;
+    }
+
+    .cta {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .cta img {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+
+    .book {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    #book {
+        width: 50%;
+    }
+
+    .video {
+        width: 100%;
+        height: 200px;
+    }
+
+    .dep-slide {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 0.5em;
+    }
+
+    .dep-slide img {
+        margin: 0;
+    }
+
+    .dep-slide div {
+        width: 200px;
+    }
+
+    .partner-icon {
+       width: 80px;
+    }
+    .beneficios {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .teacher {
+        width: 100%;
+    }
+
+    
+
+    .teacher-flex {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .logo_teacher img{
+        width: 150px;
+    }
+
+    .indes {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer_p {
+        font-size: 0.6em;
+        align-items: center;
+    }
+}
+
+/* @media screen and (min-width: 481px) and (max-width: 1024px) {
+    body, .container {
+        background-color: purple;
+    }
+} */

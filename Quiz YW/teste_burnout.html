@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Burnout Yourwellness</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="modal">
+        <div class="notice">
+            <h2>Parabéns!</h2>
+            <p>Você é do tipo que sabe delegar responsabilidades, estabelecer metas realistas e recusar exigências absurdas. Continue assim. Sua saúde mental agradece.</p>
+            <input type="button" value="Fechar" onclick="fechar()">
+        </div>
+    </div>
+
+    <div class="gradient-top"></div>
+
+    <div class="main-container">
+        <div class="content-container">
+            <header>
+                <div class="logo">
+                    <img src="https://momentoyw.com.br/appyw/logo.png" alt="">
+                </div>
+                <div class="menu">
+                    <nav>
+                        <ul>
+                            <li>
+                                <a href="#">Portal Yourwellness</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Quem Somos</a>
+                            </li>
+
+                            <li>
+                                <a href="#">Contato</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </header>
+        </div>
+    </div>
+
+    <div class="main-container">
+        <div class="content-container">
+            <main>
+                <div class="quiz">
+                    <div class="screen1">
+                        <h2>Será que você está com a síndrome de burnout?</h2><br>
+                        <p>O esgotamento físico e mental associado ao trabalho já afeta três em cada dez brasileiros. Seus principais indutores são sobrecarga de funções, falta de autonomia, ausência de reconhecimento aos esforços, perda de valores, competição desmedida e desconfiança exageradas. Quer saber se você está sob risco de desenvolver o burnout? Inicie o teste abaixo!</p><br>
+                        <p><strong>Como funciona:</strong> atribua a <strong>nota 1</strong> se a frase se aplica raramente à sua vida, <strong>nota 2</strong> se acontece às vezes ou <strong>nota 3</strong> se ocorre frequentemente. Ao final das 12 etapas, faça a soma e confira o resultado logo a sequência.</p>
+                    </div>
+
+                    <div class="question" id="question1">
+                        <h3>Minha rotina tem mais custos do que benefícios</h3>
+                        
+                        <label for="q1option1"><input type="radio" name="question_1" id="q1option1" value="1" required> 1 </label>
+                        <label for="q1option2"><input type="radio" name="question_1" id="q1option2" value="2"> 2 </label>
+                        <label for="q1option3"><input type="radio" name="question_1" id="q1option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question2">
+                        <h3>Mesmo quando estou de férias, me sinto cansado e desmotivado</h3>
+                        
+                        <label for="q2option1"><input type="radio" name="question_2" id="q2option1" value="1" required> 1 </label>
+                        <label for="q2option2"><input type="radio" name="question_2" id="q2option2" value="2"> 2 </label>
+                        <label for="q2option3"><input type="radio" name="question_2" id="q2option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question3">
+                        <h3>Tenho pouco controle sobre o ritmo e o cronograma do meu trabalho</h3>
+                        
+                        <label for="q3option1"><input type="radio" name="question_3" id="q3option1" value="1" required> 1 </label>
+                        <label for="q3option2"><input type="radio" name="question_3" id="q3option2" value="2"> 2 </label>
+                        <label for="q3option3"><input type="radio" name="question_3" id="q3option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question4">
+                        <h3>Sinto-me sobrecarregado mesmo quando não estou trabalhando</h3>
+                        
+                        <label for="q4option1"><input type="radio" name="question_4" id="q4option1" value="1" required> 1 </label>
+                        <label for="q4option2"><input type="radio" name="question_4" id="q4option2" value="2"> 2 </label>
+                        <label for="q4option3"><input type="radio" name="question_4" id="q4option3" value="3"> 3</label>
+                    </div>
+
+                    <div class="question" id="question5">
+                        <h3>Tenho faltado ao trabalho porque me sinto doente</h3>
+                        
+                        <label for="q5option1"><input type="radio" name="question_5" id="q5option1" value="1" required> 1 </label>
+                        <label for="q5option2"><input type="radio" name="question_5" id="q5option2" value="2"> 2 </label>
+                        <label for="q5option3"><input type="radio" name="question_5" id="q5option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question6">
+                        <h3>Considero meu desempenho profissional insatisfatório</h3>
+                        
+                        <label for="q6option1"><input type="radio" name="question_6" id="q6option1" value="1" required> 1 </label>
+                        <label for="q6option2"><input type="radio" name="question_6" id="q6option2" value="2"> 2 </label>
+                        <label for="q6option3"><input type="radio" name="question_6" id="q6option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question7">
+                        <h3>Tenho me isolado de meus amigos e familiares</h3>
+                        
+                        <label for="q7option1"><input type="radio" name="question_7" id="q7option1" value="1" required> 1 </label>
+                        <label for="q7option2"><input type="radio" name="question_7" id="q7option2" value="2"> 2 </label>
+                        <label for="q7option3"><input type="radio" name="question_7" id="q7option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question8">
+                        <h3>Executo tarefas incompatíveis com meus valores</h3>
+                        
+                        <label for="q8option1"><input type="radio" name="question_8" id="q8option1" value="1" required> 1 </label>
+                        <label for="q8option2"><input type="radio" name="question_8" id="q8option2" value="2"> 2 </label>
+                        <label for="q8option3"><input type="radio" name="question_8" id="q8option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question9">
+                        <h3>Sou responsável por projetos sem ter recursos para executá-los</h3>
+                        
+                        <label for="q9option1"><input type="radio" name="question_9" id="q9option1" value="1" required> 1 </label>
+                        <label for="q9option2"><input type="radio" name="question_9" id="q9option2" value="2"> 2 </label>
+                        <label for="q9option3"><input type="radio" name="question_9" id="q9option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question10">
+                        <h3>Uso medicamentos e/ou bebidas alcoólicas para relaxar</h3>
+                        
+                        <label for="q10option1"><input type="radio" name="question_10" id="q10option1" value="1" required> 1 </label>
+                        <label for="q10option2"><input type="radio" name="question_10" id="q10option2" value="2"> 2 </label>
+                        <label for="q10option3"><input type="radio" name="question_10" id="q10option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question11">
+                        <h3>Minha vida sexual se tornou mais uma tarefa a cumprir</h3>
+                        
+                        <label for="q11option1"><input type="radio" name="question_11" id="q11option1" value="1" required> 1 </label>
+                        <label for="q11option2"><input type="radio" name="question_11" id="q11option2" value="2"> 2 </label>
+                        <label for="q11option3"><input type="radio" name="question_11" id="q11option3" value="3"> 3 </label>
+                    </div>
+
+                    <div class="question" id="question12">
+                        <h3>Sinto que estou em um beco sem saída</h3>
+                        
+                        <label for="q12option1"><input type="radio" name="question_12" id="q12option1" value="1" required> 1 </label>
+                        <label for="q12option2"><input type="radio" name="question_12" id="q12option2" value="2"> 2 </label>
+                        <label for="q12option3"><input type="radio" name="question_12" id="q12option3" value="3"> 3 </label>
+                    </div>
+
+                    <input id="calc" type="button" value="Calcule seu resultado" onclick="calcular()">
+
+                </div>
+            </main>
+        </div>
+    </div>
+
+    <div class="main-container" id="footer">
+        <div class="content-container">
+            <footer>
+                <div class="logo-footer"></div>
+                <div class="social-media"></div>
+            </footer>
+        </div>
+    </div>
+
+    
+
+
+
+
+    <script src="./quiz.js"></script>
+
+</body>
+
+</html>

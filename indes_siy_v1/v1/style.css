@@ -1,0 +1,164 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: 80vw;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-c {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.flex-e {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;
+}
+
+.space {
+    height: 80px;
+    width: 100%;
+}
+
+.button {
+    padding: 20px;
+    background-color: cadetblue;
+    border-radius: 6px;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.padding-tb {
+    padding: 20px 0;
+}
+
+.fixed{
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+
+    background-color: white;
+    padding: 20px;
+    box-shadow:  0 0 1em rgba(0, 0, 0, 0.349);
+    border-radius: 5px;
+}
+
+.fixed h4 {
+    padding: 10px;
+}
+
+
+
+/* HEADER */
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 15px;
+}
+
+/* HEADER */
+
+/* MAIN */
+
+.hero {
+    background-image: url(./img/hero.png);
+    width: 100vw;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* MAIN */
+
+/* SEC 1 */
+
+.book-text img {
+    padding: 0 80px;
+}
+
+/* SEC 1 */
+
+/* SEC 2 */
+
+.depoimento {
+    padding: 20px 0;
+}
+
+.depo-text {
+    margin-left: 60px;
+}
+
+/* SEC 2 */
+
+/* SEC 3 */
+
+.b {
+    text-align: center;
+    width: 380px;
+}
+
+.b img {
+    width: 100%;
+    padding: 30px 0;
+}
+
+/* SEC 3 */
+
+/* SEC 4 */
+
+.teacher {
+    width: 400px;
+}
+
+.teacher img {
+    width: 100%;
+}
+
+/* SEC 4 */
+
+footer {
+    height: 120px;
+    background-color: black;
+    width: 100%;
+}

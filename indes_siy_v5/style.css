@@ -1,0 +1,680 @@
+* {
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+    color: var(--preto);
+    font-size: 1.1rem;
+}
+
+:root {
+    --azul: #4284f4;
+    --vermelho: #db4438;
+    --verde: #0f9e59;
+    --amarelo: #f5b500;
+    --branco: #ffffff;
+    --preto: #181818;
+    --cinza: #c4c4c4;
+    --swiper-theme-color: #181818 !important;
+}
+
+a:hover {
+    color: var(--azul);
+    text-decoration: none;
+}
+
+/* UIKIT */
+
+.uk-position-small {
+    background-color: rgba(194, 194, 194, 0.466);
+    border-radius: 50%;
+}
+
+.uk-dotnav li a {
+    background-color: var(--preto);
+}
+
+.uk-slideshow-items {
+    /* ALTURA DO SLIDE */
+    height: 500px;
+}
+
+/* UIKIT */
+
+/* PADRÕES */
+
+#indes-p {
+    width: 800px;
+}
+
+.off p {
+    color: var(--branco);
+}
+
+.title-section {
+    margin-bottom: 30px;
+    position: relative;
+    display: inline-block;
+}
+
+.t-blue::after {
+    content: "";
+    background-color: var(--azul);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 0;
+}
+
+.t-red::after {
+    content: "";
+    background-color: var(--vermelho);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 0;
+}
+
+.t-green::after {
+    content: "";
+    background-color: var(--verde);
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    bottom: -6px;
+    left: 0;
+}
+.indes-align {
+    text-align: center;
+}
+
+.indes-align-right {
+    text-align: right;
+}
+
+#padding-right {
+    padding-right: 30px;
+}
+
+#padding-left {
+    padding-left: 30px;
+}
+
+.padding {
+    padding: 20px;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 1200px;
+}
+
+.subscribe {
+    background-color: var(--azul);
+    color: var(--branco);
+    padding: 5px 20px;
+    border-radius: 50px;
+    font-weight: bold;
+}
+
+.subscribe:hover {
+    color: var(--branco);
+    background-color: #316acc;
+}
+
+.subscribe:active {
+    color: var(--branco);
+    background-color: #2353a5;
+}
+
+.link_claro {
+    color: var(--branco);
+}
+
+.link_escuro {
+    color: var(--preto);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex-jc-sb {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.flex-jc-se {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.space {
+    height: 100px;
+}
+
+/* PADRÕES */
+
+/* --- NAV --- */
+
+nav {
+    width: 100%;
+    background-color: var(--branco);
+    z-index: 999;
+    position: fixed;
+
+    box-shadow: 5px -5px 10px rgba(0, 0, 0, 0.808);
+}
+
+#navbar {
+    height: 100px;
+}
+
+.logo {
+    width: 250px;
+}
+
+.logo img {
+    width: 100%;
+}
+
+#nav_menu ul {
+    display: flex;
+    margin: 20px;
+}
+
+#nav_menu ul li {
+    margin-left: 20px;
+}
+
+.nav_buttons {
+    display: flex;
+}
+
+.whatsapp {
+    width: 36.39px;
+    height: 36.39px;
+    background-color: rgb(20, 220, 53);
+    margin-left: 16px;
+    border-radius: 50%;
+    background-image: url(./assets/icons/whats.png);
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.whatsapp:hover {
+    background-color: rgb(15, 179, 43);
+}
+
+.whatsapp:active {
+    background-color: rgb(12, 141, 33);
+}
+
+/* --- NAV --- */
+
+/* --- SLIDE PRINCIPAL --- */
+header {
+    padding-top: 100px;
+}
+
+.header-h1 {
+    font-size: 4rem;
+}
+
+.header-h4 {
+    font-size: 2rem;
+}
+
+.header-p {
+    font-size: 1.5rem;
+    color: var(--branco);
+    margin-bottom: 40px;
+}
+
+.header-p2 {
+    font-size: 1.5rem;
+    margin-bottom: 40px;
+}
+
+.sub2 {
+    padding: 15px 50px;
+}
+
+/* --- SLIDE PRINCIPAL --- */
+
+/* --- MAIN --- */
+
+#main_icon {
+    width: 250px;
+}
+
+/* --- MAIN --- */
+
+/* --- DEPOIMENTOS --- */
+
+.depoimento-item {
+    text-align: center;
+}
+
+.depoimento-item iframe {
+    width: 70%;
+    height: 450px;
+}
+
+/* --- DEPOIMENTOS --- */
+
+/* --- DEPOIMENTOS - TEXTO --- */
+
+.img {
+    width: 120px;
+    height: 120px;
+    margin: 20px;
+    border-radius: 50%;
+}
+
+.content {
+    padding: 0 100px;
+    margin: 80px 0;
+}
+.par {
+    width: 80%;
+    padding: 0;
+    margin: 0;
+    color: var(--preto);
+}
+
+.comment h4 {
+    color: var(--preto);
+}
+
+.comment h6 {
+    color: var(--preto);
+}
+
+/* --- DEPOIMENTOS - TEXTO --- */
+
+/* --- DEPOIMENTO - VIDEO V1 --- */
+
+.teste {
+    background-color: white;
+    height: 650px;
+    width: 100%;
+}
+
+.grid-video {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+}
+
+.main-video {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.aside-video {
+    background-color: white;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.thumb-video {
+    background-color: #6e0583;
+    height: 150px;
+    width: auto;
+    margin: 10px 10px;
+}
+
+/* --- DEPOIMENTO - VIDEO --- */
+
+/* --- DEPOIMENTO - VIDEO V2 --- */
+
+.slide-container {
+    background-color: rgba(0, 0, 0, 0.349);
+    width: 100%;
+    height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.slide-item-t {
+    background-color: blue;
+    height: 250px;
+    width: 350px;
+}
+
+.first-slide {
+    transform: translateX(60px);
+}
+
+.second-slide {
+    width: 450px;
+    height: 350px;
+    z-index: 20;
+}
+
+.third-slide {
+    transform: translateX(-60px);
+}
+
+#vv1 {
+    background-color: cadetblue;
+}
+
+#vv2 {
+    background-color: rgb(95, 160, 100);
+}
+
+#vv3 {
+    background-color: rgb(141, 95, 160);
+}
+
+/* --- SOBRE O LIVRO --- */
+
+#icon {
+    width: 20%;
+}
+
+/* --- SOBRE O LIVRO --- */
+
+/* --- BENEFICIOS --- */
+
+.img2 {
+    width: 220px;
+    height: 220px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.ben-text {
+    width: 80%;
+    padding: 80px 0;
+    margin-left: 40px;
+}
+
+/* --- BENEFICIOS --- */
+
+/* --- CLIENTES --- */
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    place-items: center;
+    gap: 20px;
+    -ms-grid-row-span: 20px;
+    -ms-grid-column-span: 20px;
+}
+
+.grid img {
+    max-height: 100px;
+    max-width: 100px;
+}
+
+/* --- CLIENTES --- */
+
+/* --- TEACHERS --- */
+
+.grid2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+    text-align: center;
+}
+
+#teacher-logo {
+    text-align: center;
+}
+
+/* --- TEACHERS --- */
+
+/* --- FOOTER --- */
+
+footer {
+    background-color: var(--preto);
+    padding: 40px 0;
+}
+
+/* --- FOOTER --- */
+
+/*/////// ---- CELULAR ---- ///////*/
+
+@media screen and (max-width: 1024px) {
+    * {
+        text-align: center;
+    }
+
+    .altura-depoimento {
+        /* ALTURA DO SLIDE */
+        height: 800px;
+        padding: 0;
+    }
+
+    #book {
+        width: 60%;
+        padding-bottom: 50px;
+    }
+
+    .logo2 {
+        margin-bottom: 40px;
+    }
+
+    .slide-content h4 {
+        font-size: 12px;
+    }
+
+    .slide-content h6 {
+        font-size: 10px;
+    }
+
+    .comment p {
+        font-size: 8px;
+    }
+
+    h4 {
+        font-size: 20px;
+    }
+
+    .container {
+        width: 90vw;
+        text-align: center;
+    }
+
+    .mobile-flex {
+        display: flex;
+    }
+
+    .mobile-flex-c {
+        flex-direction: column;
+    }
+
+    /* UIKIT */
+
+    .uk-position-small {
+        background-color: rgba(194, 194, 194, 0.466);
+        border-radius: 50%;
+    }
+
+    .uk-dotnav li a {
+        background-color: var(--preto);
+    }
+
+    .altura-depoimento {
+        /* ALTURA DO SLIDE */
+        height: 400px;
+        padding: 0;
+    }
+
+    /* UIKIT */
+
+    .space {
+        height: 60px;
+    }
+
+    .indes-flex-column-reverse {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .indes-flex-column {
+        display: flex;
+        flex-direction: column;
+    }
+    /* --- NAV --- */
+
+    #navbar {
+        height: 60px;
+    }
+
+    .logo {
+        width: 110px;
+    }
+
+    #nav_menu ul {
+        display: none;
+    }
+
+    .nav_buttons {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sub1 {
+        font-size: 0.5em;
+        margin: 0;
+    }
+
+    .sub2 {
+        font-size: 0.8em;
+    }
+
+    .whatsapp {
+        height: 23.19px;
+        width: 23.19px;
+        margin-left: 5px;
+        background-size: 12px;
+    }
+
+    /* --- NAV --- */
+
+    /* --- SLIDE PRINCIPAL --- */
+
+    .header-h1 {
+        font-size: 32px;
+    }
+
+    .header-h4 {
+        font-size: 20px;
+    }
+
+    .header-p {
+        font-size: 14px;
+    }
+
+    header {
+        padding-top: 60px;
+    }
+
+    .carousel-inner {
+        height: 180px;
+    }
+
+    .carousel-caption {
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        top: 0;
+        right: 0;
+        margin: 0 auto;
+
+        margin-top: 10%;
+        padding: 0 50px;
+    }
+
+    /* --- SLIDE PRINCIPAL --- */
+
+    /* --- MAIN --- */
+
+    #main_icon {
+        margin-bottom: 30px;
+        width: 60%;
+    }
+
+    /* --- MAIN --- */
+
+    /* --- DEPOIMENTOS --- */
+
+    .depoimento-item {
+        text-align: center;
+    }
+
+    .depoimento-item iframe {
+        width: 70%;
+        height: 100%;
+    }
+
+    .img {
+        width: 60px;
+        height: 60px;
+    }
+
+    .par {
+        font-size: 12px;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    .content {
+        padding: 0;
+        text-align: center;
+    }
+
+    /* --- DEPOIMENTOS --- */
+
+    /* --- BENEFICIOS --- */
+
+    .ben-text {
+        margin: 0;
+        padding: 0;
+    }
+
+    .img2 {
+        margin: 30px 0;
+    }
+
+    .grid {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .grid2 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #indes-p {
+        width: auto;
+    }
+}

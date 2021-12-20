@@ -1,0 +1,155 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.gradient-top{
+    background-image: linear-gradient(to right, red, orange,green, #298CFF);
+    height: 10px;
+    margin-bottom: 40px;
+}
+
+.main-container{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content-container{
+    width: 80%;
+    height: auto;
+}
+
+
+
+/* Header */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: 100%;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li{
+    margin-left: 20px;
+}
+
+nav ul li a{
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Header */
+
+
+
+/* Main */
+
+.quiz h2{
+    font-size: 2em;
+}
+
+.screen1{
+    padding: 60px 0;
+}
+
+.question{
+    padding: 20px 0;
+}
+
+.question h3{
+    padding: 20px 0;
+}
+
+.question input {
+    margin-right: 20px;
+}
+
+.question label{
+    margin-right: 40px;
+}
+
+#calc{
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    border-radius: 50px;
+    background-color: transparent;
+    font-weight: bold;
+    color: rgb(116, 204, 0);
+    border: solid 3px rgb(116, 204, 0);
+}
+
+#calc:hover{
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(116, 204, 0);
+    border: solid 3px rgb(116, 204, 0);
+    
+}
+
+#calc:active{
+    padding: 20px;
+    border-radius: 50px;
+    color: white;
+    background-color: rgb(85, 150, 0);
+    border: solid 3px rgb(85, 150, 0);
+    
+}
+
+/* Main */
+
+
+/* Footer */
+
+#footer{
+    background-color: rgb(66, 66, 66);
+    height: 100px;
+}
+
+/* Footer */
+
+
+/* Modal */
+
+.modal{
+    display: none;
+}
+
+.modal_on{
+    display: grid;
+    place-items: center;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(78, 78, 78, 0.918);
+}
+
+.notice{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 80%;
+    height: 80%;
+    padding: 0 300px;
+}
+
+/* Modal */
