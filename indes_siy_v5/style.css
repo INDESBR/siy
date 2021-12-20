@@ -307,88 +307,70 @@ header {
 
 /* --- DEPOIMENTOS - TEXTO --- */
 
-/* --- DEPOIMENTO - VIDEO V1 --- */
 
-.teste {
-    background-color: white;
-    height: 650px;
-    width: 100%;
-}
 
-.grid-video {
-    width: 100%;
-    height: 100%;
+/* --- DEPOIMENTO SLIDE --- */
+
+.video-grid {
     display: grid;
     grid-template-columns: 3fr 1fr;
+    height: 480px;
 }
 
-.main-video {
-    height: 100%;
+.video {
     width: 100%;
-    display: flex;
-    align-items: center;
+    height: 100%;
+    overflow: hidden;
 }
 
-.aside-video {
-    background-color: white;
-    height: 100%;
-    width: 100%;
+.aside {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
+    margin-left: 15px;
 }
 
-.thumb-video {
-    background-color: #6e0583;
-    height: 150px;
-    width: auto;
-    margin: 10px 10px;
-}
-
-/* --- DEPOIMENTO - VIDEO --- */
-
-/* --- DEPOIMENTO - VIDEO V2 --- */
-
-.slide-container {
-    background-color: rgba(0, 0, 0, 0.349);
+.slb{
     width: 100%;
-    height: 650px;
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
 }
 
-.slide-item-t {
-    background-color: blue;
-    height: 250px;
-    width: 350px;
+.slb:hover{
+    filter:opacity(80%);
+    transform: scale(0.9);
+    transition: 0.5s;
+    cursor: pointer;
 }
 
-.first-slide {
-    transform: translateX(60px);
+.tb1 {
+    height: 150px;
+    width: 100%;
 }
 
-.second-slide {
-    width: 450px;
-    height: 350px;
-    z-index: 20;
+.tb2 {
+    height: 150px;
+    width: 100%;
 }
 
-.third-slide {
-    transform: translateX(-60px);
+.tb3 {
+    height: 150px;
+    width: 100%;
 }
 
-#vv1 {
-    background-color: cadetblue;
+.vd {
+    display: none;
 }
 
-#vv2 {
-    background-color: rgb(95, 160, 100);
+.video-active {
+    display: block;
 }
 
-#vv3 {
-    background-color: rgb(141, 95, 160);
-}
+
+
+
+
+/* --- DEPOIMENTO SLIDE --- */
+
+
 
 /* --- SOBRE O LIVRO --- */
 
@@ -467,7 +449,7 @@ footer {
 
     .altura-depoimento {
         /* ALTURA DO SLIDE */
-        height: 800px;
+        height: 400px;
         padding: 0;
     }
 
@@ -520,12 +502,7 @@ footer {
         background-color: var(--preto);
     }
 
-    .altura-depoimento {
-        /* ALTURA DO SLIDE */
-        height: 400px;
-        padding: 0;
-    }
-
+    
     /* UIKIT */
 
     .space {
@@ -677,4 +654,35 @@ footer {
     #indes-p {
         width: auto;
     }
+
+    /* --- DEPOIMENTO SLIDE --- */
+
+.video-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    height: auto;
+}
+
+.video {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+.aside {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 0px;
+}
+
+.slb{
+    width: 100%;
+}
+
+
+
+
+/* --- DEPOIMENTO SLIDE --- */
+
 }
